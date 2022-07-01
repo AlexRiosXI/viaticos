@@ -1,0 +1,27 @@
+@import "General";
+
+.input-text{
+    width: 100%;
+    p{
+        font-weight: bold;
+        font-family: $fuente-uno;
+        font-size: 14px;
+        
+        
+    }
+
+    input{
+        width: 90%;
+        margin-top: 5px;
+        height: 40px;
+        padding-left: 10px;
+        border-color: gray;
+        border-width: 1px;
+        border-style:solid;
+        &:focus{
+            outline: none;
+            border-color: $rosa;
+            color: $rosa;
+        }
+    }
+}

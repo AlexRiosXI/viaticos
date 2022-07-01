@@ -1,0 +1,24 @@
+$fuente-uno: 'Public Sans', sans-serif;
+$fuente-dos: 'Roboto', sans-serif;
+
+$azul:#002D72;
+$gris:#545859;
+$rosa:#CE0F69;
+$morado:#5F249F;
+
+$negro:#111111;
+
+@mixin flexSettings($dir,$wra,$align,$justify) {
+    display: flex;
+    flex-direction: $dir;
+    flex-wrap: $wra;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+@mixin gridSettings($row-start,$row-end,$column-start,$column-end){
+    grid-column-start: $column-start;
+    grid-column-end: $column-end;
+    grid-row-start: $row-start;
+    grid-row-end: $row-end;
+}

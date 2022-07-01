@@ -1,0 +1,135 @@
+.loggin {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.loggin .art-content {
+  background-color: #f6f5f8;
+  width: 60%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 40px;
+}
+
+.loggin .art-content h1 {
+  text-align: center;
+  color: #5F249F;
+  font-family: "Public Sans", sans-serif;
+  font-size: 50px;
+}
+
+.loggin .art-content img {
+  width: 400px;
+}
+
+.loggin .loggin-form {
+  background-color: white;
+  width: 40%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.loggin .loggin-form .form-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 60%;
+  gap: 30px;
+}
+
+.loggin .loggin-form .form-container h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+.loggin .loggin-form .form-container .descripcion {
+  font-family: "Public Sans", sans-serif;
+  font-weight: lighter;
+}
+
+.input-text {
+  width: 100%;
+}
+
+.input-text p {
+  font-weight: bold;
+  font-family: "Public Sans", sans-serif;
+  font-size: 14px;
+}
+
+.input-text input {
+  width: 90%;
+  margin-top: 5px;
+  height: 40px;
+  padding-left: 10px;
+  border-color: gray;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.input-text input:focus {
+  outline: none;
+  border-color: #CE0F69;
+  color: #CE0F69;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+/*# sourceMappingURL=styles.css.map */
