@@ -39,6 +39,28 @@
                 font-family: $fuente-uno;
                 font-weight: lighter;
             }
+            button{
+                width: 100%;
+                height: 40px;
+                background-color: $morado;
+                border: none;
+                color: white;
+                font-family: $fuente-dos;
+                font-size: 18px;
+                &:hover{
+                    background-color: $azul;
+                    cursor: pointer;
+                }
+            }
+            hr{
+                width: 100%;
+            }
+
+            a{
+                font-family: $fuente-dos;
+                width: 100%;
+                text-align: center;
+            }
         }
     }
 }

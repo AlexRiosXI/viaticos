@@ -1,6 +1,10 @@
 import InputText from "../../Reutilizables/InputText";
-
+import { useState } from "react";
 const LogginForm = () => {
+    const [usuario,setUsuario] = useState("");
+    const validar_formulario = () => {
+        console.log("sjala")
+    };
     return ( 
 
         <div className='loggin-form'>
@@ -9,8 +13,8 @@ const LogginForm = () => {
                 <p className="descripcion">Utiliza tu correo institucional y la contraseña que te proporcionó el departamento de sistemas</p>
 
                 <InputText tag="Correo Electrónico" pholder="ejemplo@fideapech.com"/>
-                <InputText tag="Contraseña" pholder="Al menos 8 caracteres"/>
-                <button>Iniciar Sesión</button>
+                <InputText type="password" tag="Contraseña" pholder="Al menos 8 caracteres"/>
+                <button onClick={validar_formulario}>Iniciar Sesión</button>
 
                 <hr/>
 
