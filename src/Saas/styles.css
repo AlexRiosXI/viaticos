@@ -156,7 +156,49 @@
 .nav-bar {
   width: 100%;
   height: 100px;
-  background-color: #f3f5f8;
+  background-color: #f9f9f9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nav-bar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+  width: 80%;
+}
+
+.nav-bar .container img {
+  width: 200px;
+}
+
+.nav-bar .container .icon-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -171,6 +213,40 @@
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  gap: 20px;
+  font-family: "Public Sans", sans-serif;
+}
+
+.nav-bar .container .icon-container .icono:hover {
+  color: #CE0F69;
+  cursor: pointer;
+}
+
+.nav-bar .container .icon-container .notificacion-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  gap: 5px;
+}
+
+.nav-bar .container .icon-container .notificacion-container .notificacion {
+  background-color: #CE0F69;
+  width: 20px;
+  text-align: center;
+  border-radius: 10px;
+  color: white;
+  font-size: 14px;
 }
 
 .home .dashboard {
@@ -204,21 +280,26 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   gap: 30px;
 }
 
 .home .dashboard .container .boton {
+  font-family: "Public Sans", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
   width: 300px;
   height: 100px;
-  background-color: red;
+  background-color: #002D72;
+  border-radius: 15px;
+  color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -234,6 +315,17 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  gap: 20px;
+}
+
+.home .dashboard .container .boton:hover {
+  background-color: #CE0F69;
+  cursor: pointer;
+}
+
+.home .dashboard .container .boton .icono {
+  width: 30px;
+  height: 30px;
 }
 
 * {

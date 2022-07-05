@@ -6,7 +6,7 @@ const Login = () => {
     <div className='loggin'>
       <ArtContetn />
     <LogginForm/>
-      <div className='loggin-form'></div>
+      
     </div>
   );
 };

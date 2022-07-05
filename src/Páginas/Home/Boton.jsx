@@ -1,7 +1,11 @@
-const Boton = () => {
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+
+const Boton = ({title,icon}) => {
     return ( 
         <div className="boton">
-            <h1>Viaticos</h1>
+            <FontAwesomeIcon className="icono" icon={icon}/>
+            <h1>{title}</h1>
         </div>
      );
 }
