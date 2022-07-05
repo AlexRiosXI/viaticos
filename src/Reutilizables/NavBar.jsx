@@ -3,9 +3,20 @@ import {
   faBell,
   faArrowRightFromBracket,
 } from '@fortawesome/free-solid-svg-icons';
-import { BrowserRouter as Router,Link } from 'react-router-dom';
-const NavBar = () => {
+import { BrowserRouter as Router,Link, Navigate} from 'react-router-dom';
+import { useState,useEffect } from 'react';
+import axios from 'axios';
 
+const NavBar = () => {
+  const [logOut,setLogOut] = useState(false);
+
+  const cerrar_sesion = () => {
+    setLogOut(true);
+    localStorage.clear()
+  }
+  useEffect(() => {
+    console.log("hola")
+  }, [localStorage]);
   return (
     <div className='nav-bar'>
       <div className='container'>
@@ -13,7 +24,8 @@ const NavBar = () => {
         <img  src='LETRAS.png' alt='logo_fide' />
         </Link>
         <div className='icon-container'>
-          <h3>Alexander Ríos</h3>
+          
+          <h3>{localStorage.getItem("user_name")}</h3>
           <div className='notificacion-container'>
           <div className='notificacion'>
               <p>3</p>
@@ -21,7 +33,7 @@ const NavBar = () => {
             <FontAwesomeIcon className='icono' icon={faBell} />
 
           </div>
-          <FontAwesomeIcon className='icono' icon={faArrowRightFromBracket} />
+          <FontAwesomeIcon onClick={() => cerrar_sesion()} className='icono' icon={faArrowRightFromBracket} />
         </div>
       </div>
     </div>
